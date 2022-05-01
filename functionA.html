@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function sikhte h</title>
+    <script>
+      function myfunctionW(t, u) {
+        return t * u;
+      }
+      // let q=myfunctionW(2,3);
+      function myfunctionS(x, y) {
+        //formal argument
+        return x + y;
+      }
+      let result = (11, myfunctionS(2, 4)); //calling function/actual perameter
+      console.log(result);
+      function greed(m) {
+        console.log("hello " + m + " r u ok"); //it's giving output
+      }
+      var teache = ["shalu", "rina", "puma"]; //[]ye array h
+      console.log(teache);
+      let b = [...teache, "nishu", "puja"]; //...is a spred operator (ye copy krta h)
+      console.log(b);
+
+      for (let i = 0; i < 3; i++) {
+        //it's iterative loop
+        greed(teache[i]);
+      }
+      console.table({ shalu: "paru", marks: 34 }); //it's create  table
+      console.table({ shalu: "paru", marks: 34 });
+      // console.warn("don't touch it");//it's giving warning
+      console.time("mycode"); //it's giving time of our code how much it takes
+      console.timeEnd("it's end time");
+    </script>
+  </head>
+  <body></body>
+</html>

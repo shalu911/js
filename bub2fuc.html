@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb on off</title>
+    <style>
+        body{
+            background-color: black;
+            color: black;
+        }
+    </style>
+    <script>
+        function clickme(state)//stste is a formal argument
+        {
+            if (state=='on') {
+                document.body.style.backgroundColor="yellow";
+                document.getElementById("myimg").setAttribute('src','bulb2.png')
+            } else {
+                document.body.style.backgroundColor="black" ;
+                document.getElementById("myimg").setAttribute('src','bulb1.png')
+                // document.getElementById("myimg").setAttribute('src','bulb2.png')
+            }
+            // alert("ok");//ok is a actual argument
+           
+        }
+       
+    </script>
+</head>
+<body>
+    <img id="myimg" width="100px" src="bulb1.png" alt="">
+    <button onclick="clickme('on')">on</button>
+    <button onclick="clickme('off')">off</button>
+    
+    
+    <script>
+
+    </script>
+</body>
+</html>
