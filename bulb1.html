@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background-color: #000;
+            }
+        </style>
+        <script>
+            //1. Array
+            var a = [];
+
+            //2. Object
+            var b=  {};
+
+            //3. Array of Objects
+            var c = [{},{}];
+
+            
+            //1. Funciton Defination
+            function switchOn(){
+
+                //alert('ok');
+                document.getElementById('myimg').setAttribute('src',"bulb2.png");
+                document.getElementById('mybody').style.backgroundColor="yellow";
+            }
+            function switchOff(){
+
+                //alert('ok');
+                document.getElementById('myimg').setAttribute('src',"bulb1.png");
+                document.getElementById('mybody').style.backgroundColor="#000";
+            }
+        </script>
+    </head>
+    <body id="mybody">
+            <img src="bulb1.png" id="myimg" width="200">
+
+            <button class="a_button" onclick="switchOn()">On</button>
+            <button class="a_button" onclick="switchOff()">Off</button>   
+        
+
+        <script>
+            
+        </script>
+    </body>
+</html>
