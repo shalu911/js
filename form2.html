@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>form2</title>
+    <style>
+        body
+        {
+            background-color: antiquewhite;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         #s_form{
+              width: 760px;
+              height: 480px;
+              background-color: aquamarine;
+              margin: 150px auto;
+              border-radius: 10px;
+              box-shadow: 0px 10px 10px 10px rgba(0,0, 0, 0.3);
+              overflow: hidden;
+        }
+        #s_form >div:first-child{
+            width: 50%;
+            height: 100%;
+            background-color: white;
+            float: left;
+        }
+        #s_form >div:last-child{
+            width: 80%;
+            text-align: center;
+            height: 100%;
+            background-image: -webkit-linear-gradient(left,#ff464c,#ff416b);
+            float: right;
+            color: white;
+        }
+        #s_form >div:last-child *{
+         width: 60%;
+         margin: auto;
+        }
+        #s_form >div:first-child form{
+            margin:40px auto;
+            text-align: center;
+            width: 80%;
+        }
+        #s_form form input{
+            height: 39px;
+            width: 100%;
+            border:  solid rgb(37, 10, 10);
+            background-color: #eee;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+        input[type="password"]/*attribute selector*/
+        {
+          margin:2px auto;
+        }
+        .butn{
+            margin-top: 50px;
+            background-color: #ff464c;
+            border-radius: 20px;
+            padding: 15px;
+            width: 138px;
+            height: 41px;
+        }
+        a{
+            color:#333;
+            text-decoration: none;
+        }
+        .icon{
+            display: inline-block;
+            width: 40px;
+            height: 4opx;
+            line-height: 40px;
+            border: 1px solid #333;
+            border-radius: 40px;
+        }
+        .icon i{
+            font-size: 2em;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="s_form">
+        <div>
+            <form>
+                <h1>form</h1>
+                <div class="icon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <div> <a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+             </div>
+            <div><a href="#">or use an account</a></div>
+            <div><input type="email" name="email" placeholder="Email"> </div>
+            <div><input type="password" name="password" placeholder="Passsword"> </div>
+       <div>
+           <a href="#">Forgot your account ?</a>
+       </div>
+       <div><button class="butn" type="submit">LOG IN </button></div>
+        </form>
+        </div>
+        <div >
+            <h1 style="margin-top: 100px;"> HTML CSS Login Form</h1>
+            <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem commodi ullam quos! Et quas hic quibusdam dicta aspernatur at, in inventore, quia similique sint veritatis error voluptatem nostrum fugiat.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
